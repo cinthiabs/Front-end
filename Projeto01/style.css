@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-image: url(imagens/bg-3.jpg);
+    height: 650px;
+    background-position: right center;
+    background-size: cover;/*mostrar imagem inteira*/
+    border-top:1px solid transparent;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+.hero-content h1{
+    text-transform: uppercase; /*colocar o texto em maiusculo*/
+    text-shadow: 3px 3px 3px #333; /*colocar sombra na letra*/
+    padding-top: 60px;
+    font-size: 50px;
+}
+.hero nav ul{
+    text-align: right ;
+    margin: 20px  60px 0 0;
+}
+.hero nav li{
+    display: inline-block; /*deixar um do lado do outro, */
+    list-style: none;
+    margin: 5px;
+    border: 1px solid white;
+}
+.hero nav a{
+    background: rgba(0, 0, 0, 0.3);
+    display: block; /* faz com que o backgroud pinte todo o bloco sem margem*/ 
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px; /*Espaçamento entre as letras*/
+}
+.hero nav a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+main{
+    width: 80%;
+    margin: auto; /*centralizado*/
+}
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;  
+    overflow: auto;/*foi adicionado por causa do float no cart*/
+}
+.card{
+    width: 32%;
+   float: left;/*deixar imagen do lado da outra*/
+   margin: 6px;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+.card p{
+    margin: 0;
+    background-color:rgb(46, 46, 46);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+footer{
+    background-color: rgb(83, 83, 83);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-shadow: 3px 3px 3px black;
+}
+article h2{
+    margin-top: 0;
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(97, 97, 97);
+}

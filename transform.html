@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 150px;
+            height: 150px;
+            background: red;
+            translate: 0.2;
+        }
+        .div1:hover{
+            transform: translateX(50px);
+        }
+        .div2{
+            width: 150px;
+            height: 150px;
+            background: blue;
+            position: relative;
+            left: 50%px;
+        }
+        .div3{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+        .div3-interna{
+            background: yellow;
+            transform: translateX(80%, 25px);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        div1
+    </div>
+    <div class="div2">div2</div>
+    <hr>
+    <div class="div3">div3
+    <div class="div3-interna">div4</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro pariatur in rem quasi autem corrupti asperiores eveniet laudantium, nisi, impedit magni laboriosam quis? Iure enim reprehenderit explicabo quo, error eum.</p>
+    </div>
+</body>
+</html>

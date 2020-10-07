@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family: 'nadia';
+            src: url(fonts/nadia/nadia);
+        }
+        body{
+            background-image: linear-gradient( to top, rgba(0, 0, 0, 0.8), transparent),url(img/bg-1.jpg);
+        }
+        #radius{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: 40px auto;
+            border-radius: 50px 10px;
+        }
+        #shadow{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            box-shadow: 10px 10px  5px black; /*colocar sombra*/
+        }
+        p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            text-shadow: 1px 10px 0 #ddd;
+        }
+        html,body{
+            height: 100%;
+        }
+        #transicao{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: 40px auto;
+            transition-property: width, height;
+            transition-duration: 1s;
+            transition-timing-function: ease-in; /*todos os transition não necessario para animação ir e voltar da forma*/
+        }
+        #transicao:hover{
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Efeitos CSS</h1>
+    <h2>Efeitos CSS</h2>
+    <p>Deixar arredondado  <b> border-radius: 50px 10px; </b></p>
+    <div id="radius"></div>
+    <p>Deixar com sombra  <b>  box-shadow: 10px 10px  5px black</b> </p>
+    <div id="shadow"></div>
+    <div id="transicao"></div>
+</body>
+</html>

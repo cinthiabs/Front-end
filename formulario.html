@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .frmLogin{
+            width:280px;
+            padding: 30px;
+            margin: 200px auto 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(163, 140, 184);
+            color: #fff;
+        }
+        .frmLogin label{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        #user, #pass, .btn{
+           display: block; 
+           width: 100%;
+           box-sizing: border-box;
+           padding: 5px;
+           font-size: 18px;
+        }
+        #user, #pass{
+            background-color:rgb(206, 191, 221) ;
+        }
+        #user:focus, #pass:focus{
+            background-color: #fff;
+        }
+        .btn{
+            margin-top: 15px;
+        }
+        legend{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        input[type="text"], input[type="password"]{
+            border: none;
+        }
+        input[type="submit"]{
+            border: none;
+            color: #fff;
+            background-color: rgb(102, 88, 116);
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(51, 40, 63);
+        }
+        fieldset{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <form action="#" method="POST" target="_blank" class="frmLogin"> 
+      <fieldset>
+          <legend>Login</legend>
+          <label for="user">Digite seu usuário</label>
+          <input type="text" name="user" id="user" autofocus>
+
+          <label for="pass">Digite sua Senha</label>
+          <input type="password" name="pass" id="pass">
+
+          <input type="submit" value="Logar" class="btn">
+      </fieldset>
+    </form>
+    
+</body>
+</html>

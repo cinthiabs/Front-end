@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"]:checked{
+            width: 100px;
+            height: 100px;
+        }
+        button:disabled{
+            background-color: blue;
+        }
+        p{
+            color: blue;
+        }
+        p:empty::before{
+            content: "Paragrafo vazio";
+        }
+        input[type="text"]:focus{
+            background-color: #cccc;
+        }
+    </style>
+</head>
+<body>
+    <label for=""><input type="checkbox" value="sim">Aceito o Contrato</label>
+    <br>
+    <button>vai</button>
+    <button disabled>volta</button><!--disabled desabilita o botao-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint magnam aut iste ad ipsam, eligendi quaerat omnis modi itaque possimus velit impedit soluta animi nostrum. Eligendi obcaecati cum impedit distinctio.</p>
+    <p></p>
+    <input type="text">
+</body>
+</html>

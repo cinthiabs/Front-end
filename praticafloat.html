@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            height: 200px;
+
+        }
+        .conteudo div{
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid red;
+            margin: 10px;
+            overflow: auto;
+        }
+        #div1{
+            float: left;
+        }
+        #div2{
+            float: left;
+        }
+        #div3{
+           float: left; /*as 3 divs em float left fica um do lado do outro*/
+        }
+        header{
+            background-color: #ccc;
+            height: 50px;
+        }
+        nav{
+            width: 25%;
+            height: 50px;
+            background-color: orange;
+            float: left;
+        }
+        main{
+            width: 70%;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+        footer{
+    height: 50px;
+    background-color: blue;
+    clear: both;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="conteudo">
+        <div id="div1">div1</div>
+        <div id=div2>div2</div>
+        <div id="div3">div3</div>
+    </div>
+</section>
+    <header>header</header>
+    <nav>nav</nav>
+    <main>main</main>
+    <footer>footer</footer>
+</body>
+</html>

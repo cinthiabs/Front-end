@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article:nth-child(1) a{ /*está pegando o primeiro filho*/
+            color: red;
+        }
+        article:nth-child(3) > p{ /*está pegando o 3 filho(filho direto)*/
+            color: red;
+        }
+        article:nth-child(5)h3 + p{ /*está pegando o 5 filho (imediatamente apos o h3)*/
+            color: red;
+        }
+        div{
+            border: 3px solid red;
+            padding: 25px;
+            position: relative; /*Para o after vazio ser aplicado no canto da tela, é preciso o position relative os elementos se relacionam*/
+        }
+        div::before{
+            content: "before:"; /*Sempre que for usar before, tem que usar o content (before fica no começo do texto)*/
+            background-color: #ccc;
+        }
+        div::after{
+            content: "After";
+            background-color: #ccc;/*After é inserido no final do texto*/
+        }
+        div::after{
+            content: "";
+            background-color: red;
+            width: 25px;
+            height: 25px;
+            display: inline-block; /*porque é um elemento de linha*/
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>Texto principal da DIV</div>
+    <article>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+    </article>
+    <hr>
+    <article>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+    </article>
+    <article>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+        <p>Paragrafo <a href="#">Apenas um link com <b>Negrito</b> </a> </p>
+    </article>
+
+</body>
+</html>
