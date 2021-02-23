@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica 02</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .box{
+            display: inline-block;
+            border: 2px  solid #ddd;
+            background: #ddd;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+        label{
+            height: 15px;
+            display: inline-block;
+        }
+        input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            display:inline-block;
+            margin: 0;
+        }
+
+        input[type="checkbox"]:checked + label .box{
+            background: #999;
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked + label .box:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0px;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            border: 2px solid white;
+            transform: rotate(45deg);
+            border-top-color: transparent ;
+            border-left-color: transparent ;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+
+</head>
+<body>
+   <h1>Estrutura Basica</h1>
+   <a href="http://sertfrontend.com" target="_black">Link Externo </a>
+   <br>
+
+   <a href="qq.pdf"> download do PDF</a>
+    <hr> 
+
+   <input type="checkbox" name="box" id="box">
+   <label for="box"> <span class="box"></span>Li e aceito o contrato</label>
+
+</body>
+</html>

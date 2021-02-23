@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--mesma largura do tamanho do not, mobile-->
+    
+    <title>Document</title>
+
+    <style>
+        body{
+            background:yellow;
+            font-size: 16px;
+        }
+        .teste{
+            background: red;
+            width: 320px;
+            height: 50px;
+        }
+        .container{
+            background: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .container div{
+            background: #ccc;
+            margin-bottom: 15px;
+            height: 150px;
+            font-size: 22px;
+         
+        }
+        .clearfix::after{
+            content: ' ';
+            display: block;
+            clear: both;
+
+        }
+        @media  screen and (min-width:400px) {
+            body{
+                background:orange;
+            }
+            .container div{
+                width: 50%;
+                float: left; /*coloca ua div do lado da outra*/
+                margin-bottom: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de Media Queries</h1>
+    <p> Texto em paragrafo</p>
+
+    <div class="container clearfix">
+        <div > div1</div>
+        <div >div2</div>
+    </div>
+</body>
+</html>

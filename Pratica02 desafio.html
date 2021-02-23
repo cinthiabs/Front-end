@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica 02</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .box{
+            display: inline-block;
+            border: 2px  solid #ddd;
+            background: #ddd;
+            width: 45px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        label{
+            height: 15px;
+            display: inline-block;
+        }
+        input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            display:inline-block;
+            margin: 0;
+        }
+
+        input[type="checkbox"]:checked + label .box{
+            background: red;
+            position: relative;
+        }
+
+       
+        label span::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #eee;
+            margin: 2.5px;
+            border-radius: 50%;
+            transform: all .1s ease-in-out;  /* ANIMAÇÂO*/
+        }
+        label input:checked + span:before{ /* ANIMAÇÂO*/
+            transform: translateX(25px);
+            background: red;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+   <h1>Desafio</h1>
+  <label>
+      <input type="checkbox" name="box">
+      <span class="box"></span>
+      Esporte
+  </label>
+  <label>
+    <input type="checkbox" name="box">
+    <span class="box"></span>
+    Politica
+</label>
+<label>
+    <input type="checkbox" name="box">
+    <span class="box"></span>
+    Educação
+</label>
+
+</body>
+</html>

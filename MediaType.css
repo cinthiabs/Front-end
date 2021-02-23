@@ -1,0 +1,10 @@
+body{
+    font-family: sans-serif;
+    color: black;
+    font-size: 16px ;
+}
+a::after{
+    content: "( "attr(href)" )"; /*serve para aparcer o endereço completo de link quando for gerado o pdf ou imprimir*/
+    display: inline-block;
+    margin: 0 10px;
+}
